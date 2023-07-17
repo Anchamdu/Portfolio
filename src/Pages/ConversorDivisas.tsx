@@ -33,7 +33,7 @@ const ConversorDivisas = () => {
   return (
     <div>
       <h2>Mi conversor de euros a dólares</h2>
-      <h1>Introduzca la cantidad en euros</h1>
+      <h1>Introduzca la cantidad en rupias</h1>
       <input
         type="number"
         value={euros}
