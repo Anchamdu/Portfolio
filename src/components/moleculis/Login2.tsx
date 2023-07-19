@@ -1,17 +1,12 @@
 import React from "react";
-import Button from "./components/atoms/Button/Button.component";
-import bg from './assets/images/BG3.jpg';
-import img from './assets/images/ProfileImage.png';
-import { MediaBar } from "../components/moleculis/MediaBar";
-import { NavBar } from "../components/moleculis/NavBar";
+import { MediaBar } from "./MediaBar";
+import { NavBar } from "./NavBar";
 
 
-
-
-const LandingPage = () => {
-
-  return (
-    <div>
+const Login2 = () => {
+    return (
+      <div>
+        
        <div className="fixed h-screen w-screen -z-10">
         <img className="h-full w-full" src={bg} alt="description of image" />
       </div>
@@ -27,16 +22,14 @@ const LandingPage = () => {
         <h1 className="text-5xl font-bold text-gray-900 mb-8">Angel Chamorro's Profile</h1>
         <p className="text-xl text-gray-700 mb-8">Welcome to my humble profile! Here you will find information about my projects, skills, and how to contact me.</p>
         <p className="text-xl text-gray-700 mb-8">Enjoy!</p>
-        <p className="text-xl text-gray-700 mb-8">If you want to check my current projects please click the button below</p>
-        <Button />
+        <button className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700">Projects</button>
       </div>
 
       <div>
         <MediaBar />
       </div>
-    </div>
-  )
-}
-
-
-export default LandingPage;
+      </div>
+    );
+  };
+  
+  export default Login2;

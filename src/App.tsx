@@ -3,38 +3,46 @@ import Input from "./components/atoms/Input/Input.component";
 import Input2 from "./components/atoms/Input/Input2.component";
 import Table from "./components/atoms/Table";
 import LandingPage from "./Pages/LandingPage";
-import Register from "./Pages/Register";
+import Register from "./components/moleculis/Register";
+import { NavBar } from "./components/moleculis/NavBar";
+import { MediaBar } from "./components/moleculis/MediaBar";
+import Login from "./components/moleculis/Login";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import bg from './assets/images/BG3.jpg';
+import img from './assets/images/ProfileImage.png';
 
 
 
-const App  = () => {
 
-    return (
-        <div>
-          <div class="navbar bg-gray-900 text-white py-4 flex justify-center">
-  <a href="#" class="px-4 hover:text-gray-400">Inicio</a>
-  <button class="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700">
-  Button
-</button>
-  <a href="#" class="px-4 hover:text-gray-400">Habilidades</a>
-  <a href="#" class="px-4 hover:text-gray-400">Sobre mí</a>
-  <a href="#" class="px-4 hover:text-gray-400">Contacto</a>
-</div>
+const App = () => {
 
-<div class="container mx-auto text-center mt-12">
-  <h1 class="text-5xl font-bold text-gray-900 mb-8">Perfil de Ángel Chamorro</h1>
-  <p class="text-xl text-gray-700 mb-8">Bienvenido a mi perfil. Aquí encontrarás información sobre mis proyectos, habilidades y cómo contactarme.</p>
-  <button class="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700">Ver proyectos</button>
-</div>
+  return (
+    <div>
+      <div className="fixed h-screen w-screen -z-10">
+        <img className="h-full w-full" src={bg} alt="description of image" />
+      </div>
+      <div>
+        <NavBar />
+      </div>
+      <div className="flex items-center justify-center mt-8">
+      <img className="w-60 h-60 rounded-full" src={img} alt="description of image" />
+ 
+      </div>
 
-<div class="footer bg-gray-900 text-white text-sm text-center py-4 fixed bottom-0 w-full">
-  <a href="https://twitter.com/tu_usuario_de_twitter" class="mx-2 hover:text-gray-400">Twitter</a>
-  <a href="https://www.instagram.com/tu_usuario_de_instagram" class="mx-2 hover:text-gray-400">Instagram</a>
-  <a href="https://github.com/tu_usuario_de_github" class="mx-2 hover:text-gray-400">GitHub</a>
-</div>
-        </div>
-      )
-    }
-  
-  
-  export default App;
+      <div className="container mx-auto text-center mt-12">
+        <h1 className="text-5xl font-bold text-gray-900 mb-8">Angel Chamorro's Profile</h1>
+        <p className="text-xl text-gray-700 mb-8">Welcome to my humble profile! Here you will find information about my projects, skills, and how to contact me.</p>
+        <p className="text-xl text-gray-700 mb-8">Enjoy!</p>
+        <p className="text-xl text-gray-700 mb-8">If you want to check my current projects please click the button below</p>
+        <Button />
+      </div>
+
+      <div>
+        <MediaBar />
+      </div>
+    </div>
+  )
+}
+
+
+export default App;
