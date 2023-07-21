@@ -58,34 +58,24 @@ export interface Subscription {
 
 
 
-export const Tabla =  () => {
+export const Tabla = () => {
+  const [data, setData] = useState<Usuario[]>([]);
 
+  const fetchData = async () => {
+    try {
+      // Lógica para realizar la solicitud de datos o cualquier otra operación
+    } catch (e) {
+      // Manejo de errores
+    }
+  };
 
-const [data, setData] = useState<usuarios[]>([]);
-
-const fetchData = async () => {
-  try {
-    // Lógica para realizar la solicitud de datos o cualquier otra operación
-  } catch (e) {
-    // Manejo de errores
-  }
-}
-
-
-
-
+  // ...
+};
 
 
 
 
-const App  = () => {
 
-  return (
-       <div>
-        <Tabla />
-       </div>
-     )
-   }
- 
- 
- export default AppTabla;
+
+
+

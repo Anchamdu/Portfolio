@@ -1,29 +1,33 @@
-import React from "react";
+
+import { NavBar } from "../components/moleculis/NavBar";
+import { MediaBar } from "../components/moleculis/MediaBar";
+
 
 const AboutMe = () => {
 
-    return (
+  return (
+    <div>
       <div>
-        <div>
-          <NavBar />
-        </div>
-  
-        <div className="container mx-auto text-center mt-12">
-          <h1 className="text-5xl font-bold text-gray-900 mb-8">About Me</h1>
-          <p className="text-xl text-gray-700 mb-8">Welcome to my profile. Here you will find information about my projects, skills, and how to contact me.</p>
-          <p className="text-xl text-gray-700 mb-8">Welcome to my profile. Here you will find information about my projects, skills, and how to contact me.</p>
-          <p className="text-xl text-gray-700 mb-8">Welcome to my profile. Here you will find information about my projects, skills, and how to contact me.</p>
-          <button className="bg-gray-900 text-white py-2 px-4 rounded hover:bg-gray-700">Projects</button>
-        </div>
-        <div className="">
-          <img src="./public/images/ProfileImage.jpg" alt="description of image" />
-        </div>
-        <div>
-          <MediaBar />
-        </div>
+        <NavBar />
       </div>
-    )
-  }
-  
-  
-  export default AboutMe;
+
+      <div className="container mx-auto text-center mt-12">
+        <h1 className="text-5xl font-bold text-gray-900 mb-8">About Me</h1>
+        <p className="text-xl text-gray-700 mb-8">Born in Madrid and adopted by Extremadura.</p>
+        <p className="text-xl text-gray-700 mb-8">Always willing to learn.</p>
+        <p className="text-xl text-gray-700 font-bold italic mb-8">“When the going gets tough, the tough get going”.</p>
+
+      </div>
+
+      <div className="">
+
+      </div>
+      <div>
+        <MediaBar />
+      </div>
+    </div>
+  )
+}
+
+
+export default AboutMe;

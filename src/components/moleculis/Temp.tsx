@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Button from './components/atoms/Button/Boton.component';
-import Input from './components/atoms/Input/Input.component';
 
 const ConversorGrados = () => {
   const [celsius, setCelsius] = useState('');
