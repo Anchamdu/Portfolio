@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 
-
 const Currency = () => {
   const [euros, setEuros] = useState('');
-  const [exchangeRate, setExchangeRate] = useState(1.12);
   const [dollars, setDollars] = useState('');
 
   const handleEurosChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -11,7 +9,7 @@ const Currency = () => {
   };
 
   const handleConvertClick = () => {
-    const convertedDollars = parseFloat(euros) * exchangeRate;
+    const convertedDollars = parseFloat(euros) * 1.12;
     setDollars(convertedDollars.toFixed(2));
   };
 

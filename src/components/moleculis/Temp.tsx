@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ConversorGrados = () => {
+const Temp = () => {
   const [celsius, setCelsius] = useState('');
   const [fahrenheit, setFahrenheit] = useState('');
 
@@ -34,4 +34,4 @@ const ConversorGrados = () => {
   );
 };
 
-export default ConversorGrados;
+export default Temp;
