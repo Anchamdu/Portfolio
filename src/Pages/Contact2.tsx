@@ -11,7 +11,7 @@ export const Contact2 = () => {
       <NavBar />
       <div>
       </div>
-      <div className="max-w-md mx-auto mt-7">
+      <div className="max-w-md mx-auto mt-6">
         <form className="bg-white rounded px-8 pt-6 pb-8 mb-4">
           <div className="mb-4">
             <h1 className="text-5xl font-bold text-gray-900 mb-8 text-center">Contact me</h1>
