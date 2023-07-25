@@ -30,7 +30,7 @@ const App = () => {
           </p>
         </p>
         <p className="text-center text-gray-500 text-xs ">
-          &copy;2023 Ángel Chamorro. All rights reserved.
+          &copy;2023 Ángel Chamorro. This site has been developed using React / Node.JS / Tailwind. All rights reserved.
         </p>
       </div>
 

@@ -17,7 +17,7 @@ const AboutMe = () => {
 
         <p className="text-xl text-gray-700 mb-8">Born in Madrid and Raised in Extremadura, Spain, I'm passionate assionate about technology, music, and video games. Trained in <span className="font-bold italic text-red-400">English</span> and  <span className="font-bold italic text-red-400">Law</span>, with experience as an <span className="font-bold italic text-red-400">educator</span>.</p>
         <p className="text-xl text-gray-700 mb-8">Embarking on a journey into the world of <span className="font-bold italic text-red-400">programming. </span> Learning <span className="font-bold italic text-blue-400">SQL, Java, Javascript, React, HTML5, and CSS3.</span> I aspire to become a <span className="font-bold italic text-red-400">Full Stack developer. </span></p>
-        <p className="text-xl text-gray-700 mb-8">Creative, persevering, and focused on tackling <span className="font-bold italic text-red-400">challenges.</span></p>
+        <p className="text-xl text-gray-700 mb-8">Creative and persevering, focused on tackling <span className="font-bold italic text-red-400">challenges,</span> I enjoy working in a team.</p>
         <p className="text-xl text-gray-700 mb-8">Sharing my progress and projects on this landing page.</p>
         <p className="text-xl text-gray-700 mb-8"><span className="font-bold italic text-red-400">Join me</span> on this exciting adventure into technological development.</p>
 
